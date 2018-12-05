@@ -28,7 +28,7 @@ public class Client {
         public static void main(String[] args) throws Exception {
         while (true) {
 //            String serverAddress = (args.length == 0) ? "localhost" : args[1];
-            Client client = new Client("172.20.202.52");
+            Client client = new Client("172.20.202.101");
             client.play();
             
             System.exit(0);
@@ -46,6 +46,8 @@ public class Client {
                 if (answer != null) {
                     JOptionPane.showMessageDialog(null, answer);
                 }
+                answer = in.readLine();
+                JOptionPane.showMessageDialog(null, answer);
             }
         }
         finally {
